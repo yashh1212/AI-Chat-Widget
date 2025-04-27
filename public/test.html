@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Widget Test Page</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 20px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .card {
+            background: #f9fafb;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Test Page</h1>
+        <div class="card">
+            <h2>About</h2>
+            <p>This is a test page to demonstrate the chat widget integration.</p>
+        </div>
+        <div class="card">
+            <h2>Content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+
+    <!-- Chat Widget Script -->
+    <script 
+        src="http://localhost:5173/chat-widget.js" 
+        data-widget-url="http://localhost:5173"
+    ></script>
+</body>
+</html>

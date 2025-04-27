@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --chat-primary-color: #3b82f6;
+  --chat-text-color: #ffffff;
+  --chat-accent-color: #ef4444;
+  --chat-primary-hover: #2563eb;
+  --chat-window-bg: #1a1a1a;
+  --chat-tooltip-bg: #374151;
+  --chat-tooltip-text: #ffffff;
+  --chat-error-bg: #7f1d1d;
+  --chat-error-text: #fecaca;
+  --chat-message-bg: #2d2d2d;
+  --chat-message-text: #e5e7eb;
+}
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .animate-slideIn {
+    animation: slideIn 0.3s ease-out forwards;
+  }
+
+  .animate-slideOut {
+    animation: slideOut 0.3s ease-in forwards;
+  }
+
+  .animate-loadingBar {
+    animation: loadingBar 2s infinite;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+  }
+}
+
+@keyframes loadingBar {
+  0% {
+    width: 0%;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
