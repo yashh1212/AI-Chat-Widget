@@ -18,7 +18,7 @@ Add the following script tag to your website:
 
 ```html
 <script 
-    src="https://chatwidget1.netlify.app/widget.js"
+    src="https://chatwidget1.netlify.app/chat-widget.js"
     data-widget-url="https://chatwidget1.netlify.app/"
 ></script>
 ```
